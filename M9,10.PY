@@ -28,7 +28,13 @@ hub.imu.reset_heading(0)
 async def main():
    if hub.imu.ready():
 # Runs the main program from start to finish.
-#put code here
+    #await LAM.run_time(1000,2000)
+    #await RAM.run_time(-5000,1000)
+    await robot.straight(-100)
+
+
+
+
 
 
 run_task(main())
