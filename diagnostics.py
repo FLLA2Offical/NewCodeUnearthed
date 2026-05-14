@@ -38,7 +38,7 @@ from pybricks.tools import wait
 # MATCH THESE TO YOUR ROBOT
 # ─────────────────────────────────────────────────────────────
 WHEEL_DIAMETER_MM = 56
-AXLE_TRACK_MM     = 122
+AXLE_TRACK_MM     = 100
 LEFT_PORT         = Port.A
 RIGHT_PORT        = Port.E
 LEFT_DIR          = Direction.COUNTERCLOCKWISE
