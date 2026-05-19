@@ -12,10 +12,12 @@ reset()
 
 # Mission 9,10
 straight(-10)
-arc(-160, angle_deg=45 )
-straight(400)
-LAM.run_time(-1000,10000)
+arc(-55, angle_deg=50 )
+straight(550)
+LAM.run_time(-1000,1800)
 RAM.run_time(1500, 1000, Stop.HOLD) #make the drop the arm
-straight(-120)
+straight(-130)
 straight(15)
 RAM.run_time(-1500, 1000, Stop.HOLD) #make the drop the arm
+turn(-45)
+straight(500)
