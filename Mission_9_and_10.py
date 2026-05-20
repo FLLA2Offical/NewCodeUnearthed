@@ -14,10 +14,10 @@ reset()
 straight(-10)
 arc(-55, angle_deg=50 )
 straight(550)
-LAM.run_time(-1000,1800)
-RAM.run_time(1500, 1000, Stop.HOLD) #make the drop the arm
+LAM.run_time(-1000,1800, Stop.NONE)
+RAM.run_time(1500, 1000, Stop.HOLD) #make the arm drop 
 straight(-130)
-straight(15)
-RAM.run_time(-1500, 1000, Stop.HOLD) #make the drop the arm
-turn(-45)
-straight(500)
+straight(15), LAM.run_time(1000,1700)
+RAM.run_time(-1500, 1000, Stop.HOLD) #make the arm raise
+straight(120)
+straight(-120)
