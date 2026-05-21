@@ -1,5 +1,5 @@
 """
-Run1.py — Mission 5, 6, 7
+Run2.py — Mission 9, 10
 Uses robot_base.py for all hardware, PID, and gyro settings.
 """
 
@@ -13,7 +13,7 @@ reset()
 # Mission 9,10
 straight(-10)
 arc(-55, angle_deg=50 )
-straight(550)
+straight(560)
 LAM.run_time(-1000,1800, Stop.NONE)
 RAM.run_time(1500, 1000, Stop.HOLD) #make the arm drop 
 straight(-130)
