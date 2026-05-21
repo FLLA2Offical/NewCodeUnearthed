@@ -30,10 +30,10 @@ async def main():
 # Runs the main program from start to finish.
     await robot.straight(560)#Goes to M12 and do M15 (10 points)
     await robot.turn(10)
-    await LAM.run_time(250,2000)#Smashes  into gears on M11
+    await LAM.run_time(-250,2000)#Smashes  into gears on M11
     await RAM.run_time(-1000,1500)#Turns gears on M11 (30 points)
-    await LAM.run_time(-250,2000)#Swings arm back
-    await multitask (robot.straight(-840), LAM.run_time(-1000,2000))#Returns to home, pulls back sand (20 points)
+    await LAM.run_time(500,2500)#Swings arm back
+    await multitask (robot.straight(-840), LAM.run_time(1000,2000))#Returns to home, pulls back sand (20 points)
 
 
 
