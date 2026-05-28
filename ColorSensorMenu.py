@@ -46,7 +46,7 @@ def check_color_and_run():
         # choose run with button
         if Button.RIGHT in hub.buttons.pressed():
             wait_for_right_button()
-            import Run_1
+            import M1_2.py
 
         elif Button.LEFT in hub.buttons.pressed():
             wait_for_left_button()
