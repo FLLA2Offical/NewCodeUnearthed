@@ -3,7 +3,7 @@ from pybricks.pupdevices import Motor
 from pybricks.parameters import Port,Direction
 from pybricks.robotics import DriveBase
 from pybricks.tools import multitask, run_task, wait
-
+#Mission 1 and 2
 hub = PrimeHub()
 leftWheel   = Motor(Port.A, Direction.COUNTERCLOCKWISE)
 rightWheel  = Motor(Port.E, Direction.CLOCKWISE)
