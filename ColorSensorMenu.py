@@ -44,34 +44,42 @@ def check_color_and_run():
         hub.display.number(12)
 
         # choose run with button
-        if Button.RIGHT in hub.buttons.pressed():
-            wait_for_right_button()
-            import M1_2.py
-
-        elif Button.LEFT in hub.buttons.pressed():
+        if Button.LEFT in hub.buttons.pressed():
             wait_for_left_button()
-            import Run_2
+            import Run1.py
+
+        elif Button.RIGHT in hub.buttons.pressed():
+            wait_for_right_button()
+            import Run2.py
 
 
     elif detected == Color.RED:
         hub.light.on(Color.RED)
         hub.display.number(3)
-        wait_for_right_button()
-        import Run_3
+        wait_for_left_button()
+        import Run3.py
 
 
     elif detected == Color.GREEN:
         hub.light.on(Color.GREEN)
         hub.display.number(4)
-        wait_for_right_button()
+        wait_for_left_button()
         import Run_4
 
 
     elif detected == Color.YELLOW:
         hub.light.on(Color.YELLOW)
-        hub.display.number(5)
-        wait_for_right_button()
-        import Run_5
+        hub.display.number(56)
+
+        # choose run with button
+        if Button.LEFT in hub.buttons.pressed():
+            wait_for_left_button()
+            import Run5.py
+
+        elif Button.RIGHT in hub.buttons.pressed():
+            wait_for_right_button()
+            import Run6.py
+
 
 
 # --------------------------------------------------
