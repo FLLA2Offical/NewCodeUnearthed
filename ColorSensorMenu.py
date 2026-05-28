@@ -55,9 +55,17 @@ def check_color_and_run():
 
     elif detected == Color.RED:
         hub.light.on(Color.RED)
-        hub.display.number(3)
-        wait_for_left_button()
-        import Run3.py
+        hub.display.number(3C)
+
+        # choose run with button
+        if Button.LEFT in hub.buttons.pressed():
+            wait_for_left_button()
+            import Run3.py
+
+        elif Button.RIGHT in hub.buttons.pressed():
+            wait_for_right_button()
+            import Cross_Field.py
+
 
 
     elif detected == Color.GREEN:
