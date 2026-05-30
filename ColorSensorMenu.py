@@ -55,7 +55,7 @@ def check_color_and_run():
 
     elif detected == Color.RED:
         hub.light.on(Color.RED)
-        hub.display.number(3C)
+        hub.display.number(33)
 
         # choose run with button
         if Button.LEFT in hub.buttons.pressed():
